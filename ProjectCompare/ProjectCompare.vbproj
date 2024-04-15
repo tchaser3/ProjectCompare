@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D3D0052-1CB1-481A-8F20-93D88C9CD914}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjectCompare.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectCompare</RootNamespace>
+    <AssemblyName>ProjectCompare</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjectCompare.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjectCompare.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BOMPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOMPartsDataTier.vb" />
+    <Compile Include="CloseProgram.Designer.vb">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CloseProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.Designer.vb">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProjectID.Designer.vb">
+      <DependentUpon>CreateProjectID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProjectID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDataTier.vb" />
+    <Compile Include="EmployeesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataValidation.vb" />
+    <Compile Include="InternalProjectsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InternalProjectsDataTier.vb" />
+    <Compile Include="InternalProjectsIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalProjectsIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KeyWordSearchClass.vb" />
+    <Compile Include="LastTransaction.Designer.vb">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastTransactionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransactionDataTier.vb" />
+    <Compile Include="LastTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.Designer.vb">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleUnderDevelopment.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PartNumberDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberDataTier.vb" />
+    <Compile Include="ReceivePartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceivePartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivePartsDataTier.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CloseProgram.resx">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLastTransactionID.resx">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjectID.resx">
+      <DependentUpon>CreateProjectID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastTransaction.resx">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BOMPartsDataSet.xsc">
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOMPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOMPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOMPartsDataSet.xss">
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesDataSet.xsc">
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesDataSet.xss">
+      <DependentUpon>EmployeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsDataSet.xsc">
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InternalProjectsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InternalProjectsDataSet.xss">
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsIDDataSet.xsc">
+      <DependentUpon>InternalProjectsIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InternalProjectsIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InternalProjectsIDDataSet.xss">
+      <DependentUpon>InternalProjectsIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsc">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionDataSet.xss">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsc">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionIDDataSet.xss">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="PartNumberDataSet.xsc">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberDataSet.xss">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceivePartsDataSet.xsc">
+      <DependentUpon>ReceivePartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceivePartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceivePartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceivePartsDataSet.xss">
+      <DependentUpon>ReceivePartsDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tools.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TWCInventory.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
